@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Arda Alp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/b1d04c92bf.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="banner">Arda Alp</div>
+
+<header>
+<a href="#about">Hakkımda</a>
+<a href="#contact">İletişim</a>
+</header>
+
+<div id="avatar"></div>
+
+<div id="about">
+<h1 class="title">Hakkımda</h1>
+<p class="text">Merhaba, ben Arda Alp. 2004 İstanbul doğumluyum. 2018'den beri web geliştirme ve çeşitli dijital tasarım platformları ile ilgileniyorum. Sizler için elimden gelen hizmete daima hazırım bana <a href="#contact">iletişim</a> bölümünden ulaşabilirsiniz. Ayrıca sizlere;
+<font id="skill">
+<br>
+<br>
+Web Sayfası Yazabilirim
+<img src="img1.png" class="image">
+<br>
+<br>
+Fotoğraflarınızı Montajlayabilirim
+<img src="img2.png" class="image">
+<br>
+<br>
+Videolarınızı Montajlayabilirim
+<img src="img3.png" class="image">
+<br>
+<br>
+Instagram Postları Tasarlayabilirim
+<img src="img4.png" class="image">
+<br>
+<br>
+Discord Moderasyon Botları Kodlayabilirim
+<img src="img5.png" class="image">
+</font>
+</p>
+</div>
+
+<div id="contact">
+<h1 class="title">İletişim</h1>
+
+<div id="media">
+<a href="https://instagram.com/ard4lp?utm_medium=copy_link"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://twitter.com/ard4lp?s=09"><i class="fab fa-twitter"></i>Twitter</a>
+<a href="https://www.linkedin.com/in/arda-alp-725915205"><i class="fab fa-linkedin"></i>Linkedin</a>
+<a href="https://github.com/ArdaAlp"><i class="fab fa-github"></i>Github</a>
+<a href="mailto:ard4lp@gmail.com"><i class="fas fa-envelope"></i>E-Mail</a>
+</div>
+
+</div>
+
+<footer>
+
+<i class="far fa-copyright"></i>2021 By Arda Alp Tüm Hakları Saklıdır.
+
+</footer>
+
+</body>
+</html>
