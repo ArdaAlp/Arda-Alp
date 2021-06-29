@@ -148,7 +148,9 @@ border:1px solid #ccc;
 }
 
 #wrap {
+width:90%;
 display:flex;
+margin:0 auto;
 }
 
 .skill {
@@ -162,6 +164,7 @@ margin:3rem auto;
 display:flex;
 flex-direction:column;
 align-items:center;
+margin:2rem;
 }
 
 .image {
@@ -172,8 +175,8 @@ border-radius:10%;
 }
 
 @media only screen and (max-width: 720px) {
-#wrap {flex-direction:column;}
-.skill {width:90%;}
+#wrap {flex-direction:column; width:100%;}
+.skill {width:90%; margin:2rem auto;;}
 .image{width:15rem; height:9rem;}
 }
 
