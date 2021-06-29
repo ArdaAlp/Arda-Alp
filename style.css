@@ -88,7 +88,9 @@ align-items:center
 
 .title {
 font-size:2rem;
+font-family:bebas neue;
 color:#212121;
+letter-spacing:1px;
 }
 
 .text {
@@ -146,10 +148,16 @@ border:1px solid #ccc;
 }
 
 #skill {
-width:85%;
-padding:0 2rem;
-margin:3rem auto;
+width:40%;
+height:auto;
+padding:1.5rem 2rem;
 background:#eee;
+border-radius:10px;
+margin:3rem auto;
+}
+
+@media only screen and (max-width: 720px) {
+#skill{width:90%;}
 }
 
 .image {
@@ -159,6 +167,7 @@ margin:2rem auto;
 border-radius:10%;
 }
 
+8
 footer {
 width:100%;
 padding:2rem;
