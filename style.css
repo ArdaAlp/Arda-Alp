@@ -147,6 +147,10 @@ border-radius:50%;
 border:1px solid #ccc;
 }
 
+#wrap {
+display:flex;
+}
+
 .skill {
 width:40%;
 height:auto;
@@ -168,6 +172,7 @@ border-radius:10%;
 }
 
 @media only screen and (max-width: 720px) {
+#wrap {flex-direction:column;}
 .skill {width:90%;}
 .image{width:15rem; height:9rem;}
 }
