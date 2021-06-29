@@ -157,18 +157,3 @@ background:#eee;
 font-size:1.3rem;
 font-family:pt sans;
 }
-
-.article, .article2 {
-width:100%;
-background:red;
-display:flex;
-align-items:center;
-justify-content:flex-start;
-font-family:pt sans;
-font-weight:400;
-
-}
-
-.article2 {
-justify-content:flex-end;
-}
