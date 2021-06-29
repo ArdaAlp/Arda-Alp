@@ -4,12 +4,19 @@
 <meta charset="UTF-8" />
 <title>Arda Alp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/b1d04c92bf.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="top">
+
 <div id="banner">Arda Alp</div>
+<div id="light"><i class="fas fa-sun"></i></div>
+<div id="night"><i class="fas fa-moon"></i></div>
+
+</div>
 
 <header>
 <a href="#about">Hakkımda</a>
@@ -20,7 +27,7 @@
 
 <div id="about">
 <h1 class="title">Hakkımda</h1>
-<p class="text">Merhaba, ben Arda Alp. 2004 İstanbul doğumluyum. 2018'den beri web geliştirme ve çeşitli dijital tasarım platformları ile ilgileniyorum. Sizler için elimden gelen hizmete daima hazırım bana <a href="#contact">iletişim</a> bölümünden ulaşabilirsiniz. Ayrıca sizlere;
+<p class="text">Merhaba, ben Arda Alp. 2004 İstanbul doğumluyum. 2018'den beri web geliştirme ve çeşitli dijital tasarım platformları ile ilgileniyorum. Sizler için elimden gelen hizmete daima hazırım bana iletişim bölümünden ulaşabilirsiniz. Ayrıca sizlere;
 <font id="skill">
 <br>
 <br>
@@ -65,5 +72,35 @@ Discord Moderasyon Botları Kodlayabilirim
 
 </footer>
 
+<script>
+$(function(){
+
+$("#light").click(function(){
+$(this).slideUp("fast");
+$("#night").slideDown();
+$("body").css({background:'#eee'})
+$("#banner").css({color:'#212121'})
+$("header>a").css({color:'#212121'})
+$("#avatar").css({borderColor:'#212121'})
+$("#about").css({boxShadow:'2px 2px 5px #ccc'})
+$("#contact").css({boxShadow:'2px 2px 5px #ccc'})
+$("footer").css({boxShadow:'-2px -2px 5px #ccc'})
+});
+
+$("#night").click(function(){
+$(this).slideUp("fast");
+$("#light").slideDown();
+$("body").css({background:'#212121'})
+$("#banner").css({color:'#eee'})
+$("header>a").css({color:'#eee'})
+$("#avatar").css({borderColor:'#eee'})
+$("#about").css({boxShadow:'none'})
+$("#contact").css({boxShadow:'none'})
+$("footer").css({boxShadow:'none'})
+});
+
+})
+</script>
+
 </body>
-</html>
+</html> 
