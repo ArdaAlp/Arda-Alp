@@ -14,13 +14,37 @@ margin:0;
 padding:0;
 background:#212121;
 text-align:center;
+transition:.2s;
+}
+
+.top {
+width:100%;
+height:7rem;
+display:flex;
+margin:0 0 2rem 0;
+align-items:center;
+}
+
+#light, #night {
+font-size:1.5rem;
+color:#eee;
+right:2.5rem;
+position:absolute;
+cursor:pointer;
+padding:0.9rem 1.1rem;
+}
+
+#night {
+color:#212121;
+display:none;
 }
 
 #banner {
 color:#fff;
 font-size:3rem;
 font-family:bebas neue;
-margin:2rem 0;
+position:absolute;
+left:3.5rem
 }
 
 header {
