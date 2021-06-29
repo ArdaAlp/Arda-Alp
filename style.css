@@ -66,6 +66,7 @@ header a {display:block;}
 }
 
 #about, #contact{
+width:40%;
 height:auto;
 padding:1rem 2rem;
 background:#eee;
