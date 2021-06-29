@@ -75,8 +75,15 @@ margin:3rem auto;
 border:1px solid #ccc;
 }
 
+.center {
+display:flex;
+justify-content:space-evenly;
+align-items:center
+}
+
 @media only screen and (max-width: 720px) {
 #about, #contact {width:90%;}
+.center {flex-direction:column;}
 }
 
 .title {
