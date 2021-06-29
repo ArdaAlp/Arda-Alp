@@ -148,10 +148,11 @@ border:1px solid #ccc;
 }
 
 .skill {
-width:90%;
+width:40%;
 height:auto;
 padding:1.5rem 2rem;
 background:#eee;
+border:1px solid #ccc; 
 border-radius:10px;
 margin:3rem auto;
 display:flex;
@@ -167,6 +168,7 @@ border-radius:10%;
 }
 
 @media only screen and (max-width: 720px) {
+.skill {width:90%;}
 .image{width:15rem; height:9rem;}
 }
 
