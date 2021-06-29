@@ -148,7 +148,7 @@ border:1px solid #ccc;
 }
 
 #skill {
-width:40%;
+width:90%;
 height:auto;
 padding:1.5rem 2rem;
 background:#eee;
@@ -156,15 +156,25 @@ border-radius:10px;
 margin:3rem auto;
 }
 
+.area {
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
 @media only screen and (max-width: 720px) {
-#skill{width:90%;}
+.area{flex-direction:column;}
 }
 
 .image {
-width:15rem;
-height:9rem;
+width:25rem;
+height:19rem;
 margin:2rem auto;
 border-radius:10%;
+}
+
+@media only screen and (max-width: 720px) {
+.image{width:15rem; height:9rem;}
 }
 
 footer {
