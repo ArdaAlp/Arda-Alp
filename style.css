@@ -142,6 +142,7 @@ height:12rem;
 background:url(avatar.jpeg);
 background-position:center;
 background-size:95%;
+background-repeat:no-repeat;
 margin:2rem auto;
 border-radius:50%;
 border:1px solid #ccc;
