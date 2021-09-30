@@ -59,6 +59,7 @@ margin-left:-1.5rem;
 .lang-btn img {
 margin:0 0.5rem;
 cursor:pointer;
+margin:0 1rem;
 transition:.1s;
 }
 
@@ -103,6 +104,10 @@ color:#50ffc3;
 font-weight:500;
 font-style:italic;
 }
+
+.content:nth-child(2) {
+text-align:center;
+} 
 
 .media {
 padding:0 3rem;
