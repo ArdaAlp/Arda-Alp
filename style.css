@@ -42,12 +42,14 @@ header h1 {
 color:#50ffc3;
 font-family:sans-serif;
 text-transform:uppercase;
+margin:0 2rem;
 }
 
 header p {
 color:#eee;
 font-size:1.1rem;
 font-weight:bold;
+margin:0 1rem;
 }
 
 .lang-btn {
