@@ -1,133 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<title>Arda Alp</title>
-<meta name="theme-color" content="#212121">
+
+<!-- META TAGS -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/b1d04c92bf.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="author" content="Arda Alp ">
+
+<!-- STYLE SOURCE -->
 <link rel="shortcut icon" href="shortcut.jpg">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/b1d04c92bf.js" crossorigin="anonymous"></script>
+
+<!-- SCRIPT SOURCE (JS + JQUERY) -->
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<title>Arda Alp </title>
 </head>
+
 <body>
 
-<div class="top">
-
-<div id="banner">Arda Alp</div>
-<div id="light"><i class="fas fa-sun"></i></div>
-<div id="night"><i class="fas fa-moon"></i></div>
-
-</div>
-
 <header>
-<a href="#about">Hakkımda</a>
-<a href="#contact">İletişim</a>
+<h1> Arda Alp </h1>
+<p id="lang-text">Select Language:</p>
+<div class="lang-btn">
+<img onclick="langTR()" src="turkey.png" width="45rem">
+<img onclick="langEN()" src="united-states.png" width="45rem">
+</div>
 </header>
 
-<div id="avatar"></div>
+<div class="line"></div>
 
-<div class="center">
+<div class="content">
 
-<div id="about">
-<h1 class="title">Hakkımda</h1>
-<p class="text">Merhaba, ben Arda Alp. İstanbul doğumluyum. 2018'den beri web geliştirme ve çeşitli dijital tasarım platformları ile ilgileniyorum. Sizler için elimden gelen hizmete daima hazırım bana iletişim bölümünden ulaşabilirsiniz. Ayrıca sizlere aşağıda bulunan hizmetleri sağlayabilirim.</p>
-</div>
-
-<div id="contact">
-<h1 class="title">ILETISIM</h1>
-
-<div id="media">
-<a href="https://instagram.com/ard4lp?utm_medium=copy_link"><i class="fab fa-instagram"></i>Instagram</a>
-<a href="https://twitter.com/ard4lp?s=09"><i class="fab fa-twitter"></i>Twitter</a>
-<a href="https://www.linkedin.com/in/arda-alp-725915205"><i class="fab fa-linkedin"></i>Linkedin</a>
-<a href="https://github.com/ArdaAlp"><i class="fab fa-github"></i>Github</a>
-<a href="mailto:ard4lp@gmail.com"><i class="fas fa-envelope"></i>E-Mail</a>
-</div>
+<h1 id="title-1">ABOUT ME</h1>
+<p id="about-text">
+First of all welcome to my personal web page. <br>
+If you want to get info about of me, you are here in correct place. <br> <br>
+<i>By the way, I'm sorry if I made a mistake in English, I'm still improving myself.</i> <br> <br>
+Let's beggin, <b>Who Is This Arda?</b> <br>
+Firstly my name is <b>Arda</b>. I'm from Turkey and I live in Şanlıurfa but I born in Istanbul and I was live 13 years in Istanbul. <br>
+I'm working on web development (Front-End, Back-End) since 2018 and I'm continue improving myself about web development. <br>
+If I have a free time I usally writing code or play basketball and football with my friends. <br> <br>
+I think that's enough about information for be with me a friend. Nice to meet you. <br>
+If you want to learn more about me you can arrive me my <a href="#contact">contact</a> links.
+</p>
 
 </div>
 
-</div>
+<div id="contact" class="content">
 
-<div class="wrap">
+<h1 id="title-2">CONTACT</h1>
 
-<div class="skill">
-<div class="area">
-<img src="img1.png" class="image">
-<h1 class="title">Web Sayfası Yazabilirim</h1> 
-<p class="text">Sizlere dinamik, șık, responsive olan portfolio, blog vb... web sitelerini makul fiyatlarla ulaştırabilirim.</p>
-</div>
-</div>
-
-<div class="skill">
-<div class="area">
-<img src="img2.png" class="image">
-<h1 class="title">Fotoğraflarınızı Montajlayabilirim</h1>
-<p class="text">Istediğiniz görselleri (selfie, manzara...) istediniz filtrelerle profosyonel fotoğraf programları ile makul fiyatlarla daha güzel bir görünüm kazandırabilirim.</p>
-</div>
+<div class="media">
+<a href="https://www.instagram.com/ard4lp/"> <i class="fab fa-instagram"></i> </a>
+<a href="https://mobile.twitter.com/ard4lp"> <i class="fab fa-twitter"></i> </a>
+<a href="mailto: ard4lp+webMessage@gmail.com"> <i class="far fa-envelope"></i> </a>
+<a href="https://www.linkedin.com/in/arda-alp-725915205"> <i class="fab fa-linkedin"></i> </a>
+<a href="https://github.com/ArdaAlp"> <i class="fab fa-github"></i> </a>
 </div>
 
 </div>
 
-<div class="wrap">
-
-<div class="skill">
-<img src="img3.png" class="image">
-<h1 class="title">Videolarınızı Montajlayabilirim</h1>
-<p class="text">Istediniz formatta (YouTube videosu, İnstagram reels... ) profosyonel montaj programları ile videolarınızı makul fiyata editleyebilirim.</p>
-</div>
-
-<div class="skill">
-<img src="img4.png" class="image">
-<h1 class="title">Instagram Postları Tasarlayabilirim</h1>
-<p class="text">Sayfanıza özel reklam, bilgilendirici post vb... makul fiyata tasarlayabilirim.</p>
-</div>
-
-</div>
-
-<div class="skill">
-<img src="img5.png" class="image">
-<h1 class="title">Discord Moderasyon Botları Kodlayabilirim</h1> 
-<p class="text">Sizlere profosyonel olarak Discord Moderasyon botu yazabilirim fiyata VDS ücreti dahil. </p>
-</div>
-
-</div>
+<div class="line"></div>
 
 <footer>
-<i class="far fa-copyright"></i>2021 By Arda Alp Tüm Hakları Saklıdır.
+<p>Copyright © 2020-2022 by <font class="mark">Arda Alp</font></p>
 </footer>
-
-<script>
-$(function(){
-
-$("#light").click(function(){
-$(this).slideUp("fast");
-$("#night").slideDown();
-$("body").css({background:'#eee'})
-$("#banner").css({color:'#212121'})
-$("header>a").css({color:'#212121'})
-$("#avatar").css({borderColor:'#212121'})
-$("#about").css({boxShadow:'2px 2px 5px #ccc'})
-$("#contact").css({boxShadow:'3px 2px 5px #ccc'})
-$("footer").css({boxShadow:'2px 2px 5px #ccc'})
-$(".skill").css({boxShadow:'2px 2px 5px #ccc'})
-});
-
-$("#night").click(function(){
-$(this).slideUp("fast");
-$("#light").slideDown();
-$("body").css({background:'#212121'})
-$("#banner").css({color:'#eee'})
-$("header>a").css({color:'#eee'})
-$("#avatar").css({borderColor:'#eee'})
-$("#about").css({boxShadow:'none'})
-$("#contact").css({boxShadow:'none'})
-$("footer").css({boxShadow:'none'})
-$(".skill").css({boxShadow:'none'})
-});
-
-})
-</script>
 
 </body>
 </html>
