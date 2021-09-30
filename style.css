@@ -1,198 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=PT+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Yaldevi&display=swap');
+
 
 html {
 scroll-behavior:smooth;
+}
+
+p {
+font-family:yaldevi;
 }
 
 * {
 box-sizing:border-box;
 }
 
-@keyframes fadeIn {
-0% {opacity:0; transform:translateY(-30px)}
-
-100%{opacity:1 transform:translateY(0)}
-}
-
 body {
+background:#111;
 margin:0;
 padding:0;
-background:#212121;
-text-align:center;
-transition:.2s;
-animation:fadeIn 1.2s;
-}
-
-.top {
-height:7rem;
 display:flex;
-margin:0 0 2rem 0;
+flex-direction:column;
 align-items:center;
-}
-
-#light, #night {
-font-size:1.5rem;
-color:#eee;
-right:2.5rem;
-position:absolute;
-cursor:pointer;
-padding:0.9rem 1.1rem;
-}
-
-#night {
-color:#212121;
-display:none;
-}
-
-#banner {
-color:#fff;
-font-size:3rem;
-font-family:bebas neue;
-position:absolute;
-left:3.5rem
+justify-content:space-evenly;
 }
 
 header {
 width:80%;
+padding:1rem 1rem 0 1rem;
 display:flex;
 align-items:center;
 justify-content:space-evenly;
-margin:0 auto;
+margin-top:1rem;
 }
 
-header a {
-color:#fff;
-font-size:1.2rem;
-font-family:cutive mono;
-display:none;
-}
-
-@media only screen and (max-width: 720px) {
-header a {display:block;}
-}
-
-#about, #contact{
-width:40%;
-height:auto;
-padding:1rem 2rem;
-background:#eee;
-border-radius:10px;
-margin:3rem auto;
-border:1px solid #ccc;
-}
-
-.center {
-display:flex;
-justify-content:space-evenly;
-align-items:center
-}
-
-@media only screen and (max-width: 720px) {
-#about, #contact {width:90%;}
-.center {flex-direction:column;}
-}
-
-.title {
-font-size:2rem;
-font-family:bebas neue;
-color:#212121;
-letter-spacing:1px;
-}
-
-.text {
-font-size:1.5rem;
-color:#212121;
-font-family:pt sans;
-font-weight:400;
-}
-
-.text a {
-font-size:1.2rem;
-color:#212121;
-font-weight:600;
-}
-
-#media {
-display:flex;
+@media only screen and (max-width: 600px) { 
+header {
 flex-direction:column;
 }
+}
 
+header h1 {
+color:#50ffc3;
+font-family:sans-serif;
+text-transform:uppercase;
+}
 
-#media i {
-font-size:1.5rem;
+header p {
+color:#eee;
+font-size:1.1rem;
+font-weight:bold;
+}
+
+.lang-btn {
+margin-left:-1.5rem;
+}
+
+.lang-btn img {
+margin:0 0.5rem;
 cursor:pointer;
-padding:1rem;
-color:#212121;
-transition:0.1s;
+transition:.1s;
 }
 
-#media i:hover {
-font-size:1.6rem;
+.lang-btn img:nth-child(1):hover {
+filter:drop-shadow(0 0 10px red);
+transform:scale(1.1);
 }
 
-#media a {
-font-size:1.5rem;
-color:#212121;
-transition:0.1s;
-text-decoration:none;
-font-family:bebas neue;
+.lang-btn img:nth-child(2):hover {
+filter:drop-shadow(0 0 10px blue);
+transform:scale(1.1);
 }
 
-#media a:hover {
-font-size:1.6rem;
+.line {
+width:70%;
+height:1px;
+background:#444;
+margin:2rem 0;
 }
 
-#avatar {
-width:12rem;
-height:12rem;
-background:url(avatar.jpeg);
-background-position:center;
-background-size:100%;
-background-repeat:no-repeat;
-margin:2rem auto;
-border-radius:50%;
-border:1px solid #ccc;
-}
-
-.wrap {
+.content {
 width:90%;
-display:flex;
-margin:0 auto;
-}
-
-.skill {
-width:45%;
-height:auto;
-padding:1.5rem 2rem;
-background:#eee;
-border:1px solid #ccc; 
+padding:1rem 2rem;
+background:#121212;
+border:1px solid #222;
 border-radius:10px;
-margin:3rem auto;
+margin:1rem 0;
+}
+
+.content h1 {
+color:#eee;
+font-family:sans-serif;
+}
+
+.content p {
+color:#eee;
+font-size:1.1rem;
+}
+
+.content p a {
+color:#50ffc3;
+font-weight:500;
+font-style:italic;
+}
+
+.media {
+padding:0 3rem;
 display:flex;
-flex-direction:column;
 align-items:center;
-margin:2rem auto;
+justify-content:space-evenly;
 }
 
-.image {
-width:20rem;
-height:14rem;
-margin:2rem auto;
-border-radius:10%;
+.media i {
+color:#eee;
+font-size:1.6rem;
+padding:0.8rem 0.9rem;
+transition:0.2s;
 }
 
-@media only screen and (max-width: 720px) {
-.wrap {flex-direction:column; width:100%;}
-.skill {width:90%; margin:2rem auto;;}
-.image{width:15rem; height:9rem;}
+.media i:hover {
+background:#50ffc3;
+color:#000;
+filter:drop-shadow(0 0 5px #50ffc3);
+transform:scale(1.1);
 }
 
 footer {
-width:100%;
-padding:2rem;
+width:70%;
+padding:0 1rem 1rem 1rem;
+color:#eee;
 text-align:center;
-background:#eee;
-font-size:1.3rem;
-font-family:pt sans;
+}
+
+.mark {
+color:#50ffc3;
+font-weight:500;
+font-style:italic;
 }
