@@ -90,15 +90,6 @@ border-radius:10px;
 margin:1rem 0;
 }
 
-media only screen and (max-width: 600px) { 
-
-content {
-
-width:90%;
-
-}
-
-}
 
 .content h1 {
 color:#eee;
@@ -122,6 +113,17 @@ display:flex;
 justify-content:space-evenly;
 align-items:center
 } 
+
+media only screen and (max-width: 600px) { 
+
+.content {
+
+width:90%;
+
+}
+
+}
+
 
 .media {
 padding:0 3rem;
