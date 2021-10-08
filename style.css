@@ -96,6 +96,11 @@ margin:1rem;
 
 }
 
+header #logo {
+border-radius:50%;
+border:2px solid #efefef;
+} 
+
 .line {
 width:70%;
 height:1px;
