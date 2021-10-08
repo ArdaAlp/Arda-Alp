@@ -74,13 +74,6 @@ justify-content:center;
 margin-top:1rem;
 }
 
-header #logo {
-margin:0 0 1rem 0;
-width:60%;
-border-radius:50%;
-border:2px solid #efefef;
-}
-
 .lang-btn img {
 width:3.5rem;
 margin:0 0.7rem;
@@ -98,8 +91,17 @@ margin:1rem;
 
 header #logo {
 border-radius:50%;
-width:30%;
+width:25%;
 border:2px solid #efefef;
+} 
+
+@media only screen and (max-width: 600px) {
+header #logo {
+margin:0 0 1rem 0;
+width:60%;
+border-radius:50%;
+border:2px solid #efefef;
+}
 } 
 
 .line {
