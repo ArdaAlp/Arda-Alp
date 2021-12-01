@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+box-sizing:border-box;
+}
+
+body {
+margin:0;
+padding:0 6rem;
+background:#0f0f0f;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+@media only screen and (max-width:768px) {
+body { 
+padding:0 3rem;
+flex-direction:column;
+}
+}
+
+.title {
+text-align:center;
+font-size:2rem;
+font-family:source code pro;
+color:#fff;
+}
+
+.contact {
+padding:1rem;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+}
+
+.contact h2 {
+font-size:2rem;
+font-family:source code pro;
+padding:1rem 4rem;
+color:#fff;
+border-bottom:1px solid #fff;
+}
+
+.media-box {
+width:100%;
+padding:0.5rem 0;
+display:flex;
+align-items:center;
+justify-content:space-evenly;
+}
+
+.media-box a {
+color:#fff;
+text-decoration:none;
+padding:0.6rem 0.8rem;
+font-size:1.5rem;
+border-radius:50%;
+margin:0 0.5rem;
+transition:0.2s;
+}
+
+.media-box a:hover {
+color:#0f0f0f;
+filter:drop-shadow(0 0 3px #ccc);
+transform:scale(1.1);
+background:#fff;
+}
