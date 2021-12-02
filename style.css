@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+::selection {
+color:#0f0f0f;
+background:#fff;
+}
+
 * {
 box-sizing:border-box;
 }
