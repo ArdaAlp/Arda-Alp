@@ -2,7 +2,7 @@
 
 ::selection {
 color:#0f0f0f;
-background:#fff;
+background:#50ffc3;
 }
 
 * {
@@ -11,7 +11,7 @@ box-sizing:border-box;
 
 body {
 margin:0;
-padding:0 6rem;
+padding:0 20%;
 background:#0f0f0f;
 display:flex;
 align-items:center;
@@ -19,9 +19,9 @@ justify-content:space-between;
 }
 
 @media only screen and (max-width:768px) {
-body { 
-padding:0 3rem;
+body {
 flex-direction:column;
+justify-content:space-evenly;
 }
 }
 
@@ -45,7 +45,7 @@ font-size:2rem;
 font-family:source code pro;
 padding:1rem 4rem;
 color:#fff;
-border-bottom:1px solid #fff;
+border-bottom:1px solid #50ffc3;
 }
 
 .media-box {
@@ -68,7 +68,7 @@ transition:0.2s;
 
 .media-box a:hover {
 color:#0f0f0f;
-filter:drop-shadow(0 0 3px #ccc);
+filter:drop-shadow(0 0 5px #50ffc3);
 transform:scale(1.1);
-background:#fff;
+background:#50ffc3;
 }
