@@ -72,3 +72,26 @@ filter:drop-shadow(0 0 5px #50ffc3);
 transform:scale(1.1);
 background:#50ffc3;
 }
+
+footer {
+width:100%;
+padding:0.5rem;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-family:source code pro;
+}
+
+footer mark {
+background:none;
+color:#50ffc3;
+}
+
+footer mark {
+animation:ani 1.5s ease-in infinite;
+}
+
+@keyframes ani {
+50% {text-shadow:0 0 10px #50ffc3;}
+}
