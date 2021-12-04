@@ -56,8 +56,15 @@ display:none;
 display:none;
 }
 
+.content {
+display:flex;
+align-items:center;
+justify-content:space-between;
+} 
+
 @media only screen and (max-width:768px) {
 .content {
+display:block;
 scroll-snap-type:y mandatory;
 overflow-y:scroll;
 height:100vh;
