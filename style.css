@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-::selection {
-color:#0f0f0f;
-background:#50ffc3;
+html {
+scroll-behavior:smooth;
 }
 
 * {
 box-sizing:border-box;
+text-decoration:none;
 }
 
 body {
 margin:0;
-padding:0 20%;
+padding:0 6rem;
 background:#0f0f0f;
 display:flex;
 align-items:center;
@@ -19,15 +19,15 @@ justify-content:space-between;
 }
 
 @media only screen and (max-width:768px) {
-body {
+body { 
+padding:0 3rem;
 flex-direction:column;
-justify-content:space-evenly;
 }
 }
 
 .title {
 text-align:center;
-font-size:2rem;
+font-size:2.5rem;
 font-family:source code pro;
 color:#fff;
 }
@@ -48,6 +48,59 @@ color:#fff;
 border-bottom:1px solid #50ffc3;
 }
 
+.avatar {
+display:none;
+}
+
+#down {
+display:none;
+}
+
+@media only screen and (max-width:768px) {
+.content {
+scroll-snap-type:y mandatory;
+overflow-y:scroll;
+height:100vh;
+}
+
+section {
+height:100vh;
+scroll-snap-align:start;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.avatar {
+display:block;
+width:11rem;
+height:11rem;
+border-radius:50%;
+background:url(avatar.jpg);
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+border:4px solid #232323;
+filter:drop-shadow(0 0 9px #50ffc3);
+}
+
+span {
+color:#50ffc3;
+}
+
+#down {
+display:block;
+color:#50ffc3;
+animation:down-ani 1s infinite;
+filter:drop-shadow(0 0 3px #50ffc3);
+}
+}
+
+@keyframes down-ani {
+50% {transform:translateY(-0.7rem)}
+}
+
 .media-box {
 width:100%;
 padding:0.5rem 0;
@@ -59,9 +112,8 @@ justify-content:space-evenly;
 .media-box a {
 color:#fff;
 text-decoration:none;
-padding:0.6rem 0.8rem;
-font-size:1.5rem;
-border-radius:50%;
+padding:0.5rem 0.7rem;
+font-size:1.6rem;
 margin:0 0.5rem;
 transition:0.2s;
 }
@@ -71,27 +123,4 @@ color:#0f0f0f;
 filter:drop-shadow(0 0 5px #50ffc3);
 transform:scale(1.1);
 background:#50ffc3;
-}
-
-footer {
-width:100%;
-padding:0.5rem;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
-font-family:source code pro;
-}
-
-footer mark {
-background:none;
-color:#50ffc3;
-}
-
-footer mark {
-animation:ani 1.5s ease-in infinite;
-}
-
-@keyframes ani {
-50% {text-shadow:0 0 10px #50ffc3;}
 }
