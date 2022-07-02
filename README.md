@@ -10,5 +10,9 @@ I usally write code in my day and do some walking in park. <br> <br>
 If you want more information about to me or contact with me you can arrive me with my web page. <br> <br>
 I apologize for my English by the way. 😅
 
+#### My Projects 📂
+[Get My Script](https://github.com/ArdaAlp/Get-My-Script) <br>
+[Python Examples](https://github.com/ArdaAlp/Python-Examples) <br>
+
 My web page link:
 [Arda Alp](https://arda-alp.vercel.app) 
