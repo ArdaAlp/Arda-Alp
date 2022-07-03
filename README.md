@@ -14,4 +14,6 @@ I apologize for my English by the way. 😅
 
 #### My Projects 📂
 [Get My Script](https://github.com/ArdaAlp/Get-My-Script) <br>
-[Python Examples](https://github.com/ArdaAlp/Python-Examples) <br>
+[Python OOP Examples](https://github.com/ArdaAlp/Python-Examples) <br>
+[Number Finder](https://github.com/ArdaAlp/Number-Finder) <br>
+[Rock Paper Scissors](https://github.com/ArdaAlp/Rock-Paper-Scissors) <br>
