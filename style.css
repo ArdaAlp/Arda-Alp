@@ -75,3 +75,18 @@ header img {
         padding: 1rem 1rem;
     }
 }
+
+@media only screen and (max-width: 732px) {   
+    .section {
+        width: 80%;
+        margin-top: 0;
+        border: none;
+        filter: none;
+        margin-bottom: 0;
+    }
+
+    #contact {
+        width: 70%;
+        padding: 1rem 0;
+    }
+}
