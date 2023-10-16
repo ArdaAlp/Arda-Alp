@@ -25,6 +25,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .center .navbar {
@@ -32,6 +33,9 @@ body {
     height: 100vh;
     background-color: #121212;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -87,6 +91,8 @@ body {
 
 .center .profile img {
     border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
     border: 0.15rem solid #fff;
     filter: drop-shadow(0 0 0.5rem #888);
 }
@@ -118,7 +124,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5rem 20rem;
+    padding: 5rem 0;
 }
 
 .about .bg {
@@ -130,17 +136,8 @@ body {
     background-image: url("assets/bg2.jpg");
 }
 
-.about h1 {
-    text-transform: uppercase;
-    color: #121212;
-    font-size: 3rem;
-    font-family: 'Oswald', sans-serif;
-    border-bottom: 0.2rem solid #121212;
-    border-left: 0.2rem solid #121212;
-    padding: 0 1.1rem 0.7rem 1.2rem;
-}
-
 .about span {
+    width: 85%;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 3rem;
     border: 0.15rem solid #212121;
@@ -152,6 +149,10 @@ body {
     font-size: 1.4rem;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+}
+
+.about p a {
+    color: white;
 }
 
 .contact {
