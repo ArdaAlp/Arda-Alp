@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arda ALP - Portfoy</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+
+  <nav>
+    <span class="nav-logo">Arda ALP</span>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#hakkimda" class="active" data-i18n="navAbout">Hakkimda</a>
+        <a href="#projeler" data-i18n="navProjects">Projeler</a>
+        <a href="#timeline" data-i18n="navTimeline">Deneyim</a>
+        <a href="#iletisim" data-i18n="navContact">Iletisim</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Dil secenegi">
+        <button class="lang-btn active" type="button" aria-pressed="true" data-lang="tr">TR</button>
+        <button class="lang-btn" type="button" aria-pressed="false" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img class="avatar-image" src="static/asset/profile.png" alt="Profil resmi" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <span class="hero-label" data-i18n="heroLabel">Elektrik-Elektronik Muhendisligi Ogrencisi</span>
+        <h1 class="hero-name">Arda ALP</h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="hakkimda">
+    <div class="section-label" data-i18n="aboutTitle">Benim Hakkimda</div>
+    <p class="about-text" data-i18n="aboutText">Dicle Universitesi Elektrik ve Elektronik Muhendisligi ogrencisiyim. 2018'den bu yana yazilim gelistirme alaninda aktif olarak bireysel projeler uretiyor, farkli dillerde script ve moduller gelistiriyorum. Gomulu sistemler, FPGA, mikrodenetleyici tabanli otomasyon cozumleri ve temel Full-Stack web gelistirme konulariyla ilgileniyorum; Front-End, Back-End ve API mimarisi tarafinda kendimi surekli ileri tasiyorum. Kisisel motivasyonumla teknik birikimimi buyuturken, genel kulturumu gelistirmeyi ve farkli kulturleri tanimayi da bu yolculugun onemli bir parcasi olarak goruyorum.</p>
+  </section>
+
+  <section id="projeler">
+    <div class="section-label" data-i18n="projectsTitle">Bazi Projelerim</div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-tag" data-i18n="p1Tag">API / Backend</div>
+        <h3 class="project-title">API Authentication Flask</h3>
+        <p class="project-text" data-i18n="p1Text">Flask tabanli kimlik dogrulama akislarini ve API guvenlik yapisini ornekleyen backend projesi.</p>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/ArdaAlp/API-Authentication-Flask" target="_blank" rel="noopener noreferrer" data-i18n="repoBtn">Repo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag" data-i18n="p2Tag">API / Backend</div>
+        <h3 class="project-title">API TodoApp Flask</h3>
+        <p class="project-text" data-i18n="p2Text">Gorev yonetimi uzerine kurulu, temel CRUD endpoint'leri ve sade servis mimarisi iceren Flask API uygulamasi.</p>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/ArdaAlp/API-TodoApp-Flask" target="_blank" rel="noopener noreferrer" data-i18n="repoBtn">Repo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag" data-i18n="p3Tag">Python / OOP</div>
+        <h3 class="project-title">Banking System OOP</h3>
+        <p class="project-text" data-i18n="p3Text">Python OOP prensipleriyle gelistirilmis, temel bankacilik operasyonlarini modelleyen kapsamli bir sistem denemesi.</p>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/ArdaAlp/Banking-System-OOP" target="_blank" rel="noopener noreferrer" data-i18n="repoBtn">Repo</a>
+        </div>
+      </article>
+    </div>
+    <a class="projects-cta" href="https://github.com/ArdaAlp?tab=repositories" target="_blank" rel="noopener noreferrer">
+      <img src="static/asset/github.svg" alt="GitHub" />
+      <span data-i18n="projectsCta">Goz At</span>
+    </a>
+  </section>
+
+  <section id="timeline">
+    <div class="section-label" data-i18n="timelineTitle">Yolculugum</div>
+    <div class="timeline-list">
+      <article class="timeline-item">
+        <span class="timeline-year">2018</span>
+        <div class="timeline-content">
+          <h3 data-i18n="t1Title">HTML ve CSS ile Baslangic</h3>
+          <p data-i18n="t1Text">HTML ve CSS temelleriyle ilk adimlarimi attim; temel seviyede Front-End web siteleri gelistirerek pratik kazandim.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="timeline-year">2023</span>
+        <div class="timeline-content">
+          <h3 data-i18n="t2Title">Altyapi ve Teorik Derinlesme</h3>
+          <p data-i18n="t2Text">Back-End, algoritma ve programlama altyapim uzerine yogunlastim; bilgisayar aglari alaninda genel kulturumu gelistirmeye calistim. Universite egitiminin baslamasiyla birlikte C ve Python dillerinde algoritmalar yazarak problem cozme refleksimi guclendirdim.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="timeline-year">2024</span>
+        <div class="timeline-content">
+          <h3 data-i18n="t4Title">Arduino ile Mikrodenetleyici Girisi</h3>
+          <p data-i18n="t4Text">Arduino projeleriyle temel mikrodenetleyici gelistirme alanina adim attim ve donanim-yazilim etkilesimini daha yakindan deneyimledim.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="timeline-year">2025</span>
+        <div class="timeline-content">
+          <h3 data-i18n="t5Title">Python Backend Projeleri</h3>
+          <p data-i18n="t5Text">Basta FastAPI ve Flask olmak uzere Python tabanli Back-End projeleri gelistirerek API tasarimi ve servis kurgusu tarafinda ilerleme kaydettim.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="timeline-year" data-i18n="t6Year">Simdi</span>
+        <div class="timeline-content">
+          <h3 data-i18n="t6Title">Guncel Odak</h3>
+          <p data-i18n="t6Text">Guncel olarak FPGA dili ile donanim muhendisligi ve gomulu sistemler alaninda ilerleme katetmeye basladim.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <div class="section-label" data-i18n="contactTitle">Iletisim ve Sosyal Medya</div>
+    <div class="contact-grid">
+
+      <div>
+        <div class="contact-col-title" data-i18n="directContact">Dogrudan Iletisim</div>
+        <div class="contact-list">
+
+            <div class="contact-item">
+              <a class="contact-icon contact-icon-link email" href="mailto:ard4lp@gmail.com" aria-label="E-posta gonder">
+                <img src="static/asset/mail.svg" alt="E-posta ikonu" />
+              </a>
+              <div class="contact-info">
+                <strong data-i18n="emailLabel">E-Posta</strong>
+                <span>ard4lp@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <a class="contact-icon contact-icon-link phone" href="tel:+905528183463" aria-label="Telefonla ara">
+                <img src="static/asset/phone.svg" alt="Telefon ikonu" />
+              </a>
+              <div class="contact-info">
+                <strong data-i18n="phoneLabel">Telefon</strong>
+                <span>+90 552 818 34 63</span>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-col-title" data-i18n="socialTitle">Sosyal Medya</div>
+        <div class="social-links">
+          <a class="social-btn" href="https://www.linkedin.com/in/ardaalp/" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon">
+              <img src="static/asset/linkedin.svg" alt="LinkedIn" />
+            </span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-btn" href="https://github.com/ArdaAlp" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon">
+              <img src="static/asset/github.svg" alt="GitHub" />
+            </span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-signature" data-i18n="footerSignature">Arda ALP - Ogren > Uret > Gelistir.</p>
+      <span class="footer-stamp">MMXXVI / Portfolio v1.0</span>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js" defer></script>
+</body>
+
+</html>
