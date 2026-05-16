@@ -75,6 +75,10 @@ const translations = {
   }
 };
 
+// Add translation for download button label
+translations.tr.downloadCv = 'CV İndir';
+translations.en.downloadCv = 'Download CV';
+
 const langButtons = document.querySelectorAll('.lang-btn');
 const langSwitch = document.querySelector('.lang-switch');
 
@@ -99,6 +103,16 @@ function applyLanguage(lang) {
 
   if (langSwitch) {
     langSwitch.setAttribute('data-active-lang', lang);
+  }
+
+  // update CV download link according to active language
+  const cvAnchor = document.getElementById('cv-download');
+  if (cvAnchor) {
+    const cvFile = (lang === 'en') ? 'static/asset/Arda-Alp-CV-en.pdf' : 'static/asset/Arda-Alp-CV-tr.pdf';
+    cvAnchor.setAttribute('href', cvFile);
+    // set download filename (user-facing)
+    const downloadName = (lang === 'en') ? 'Arda-Alp-CV-en.pdf' : 'Arda-Alp-CV-tr.pdf';
+    cvAnchor.setAttribute('download', downloadName);
   }
 }
 
