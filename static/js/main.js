@@ -77,7 +77,7 @@ const translations = {
 
 // Add translation for download button label
 translations.tr.downloadCv = 'CV İndir';
-translations.en.downloadCv = 'Download CV';
+translations.en.downloadCv = 'Download Resume';
 
 const langButtons = document.querySelectorAll('.lang-btn');
 const langSwitch = document.querySelector('.lang-switch');
